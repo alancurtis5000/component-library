@@ -1,6 +1,6 @@
 {
-  "name": "component-library",
-  "version": "0.0.1",
+  "name": "@alancurtis5000/component-library",
+  "version": "0.0.2",
   "description": "react component library",
   "scripts": {
     "rollup": "rollup -c"
@@ -26,6 +26,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
+    "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.4.0"
   },
   "main": "dist/cjs/index.js",
@@ -33,5 +34,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/alancurtis5000"
+  }
 }
